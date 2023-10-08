@@ -5,7 +5,7 @@ function App() {
   const [isBoring, setIsBoring] = useState(true);
 
   return (
-    <div className={`flex justify-center ${!isBoring && "bg-[url('./imgs/Space.jpg')] bg-fixed"}`}>
+    <div className={`flex justify-center ${!isBoring && "bg-black"}`}>
       <Skeleton isBoring={isBoring} setBoring={() => setIsBoring(!isBoring)} />
     </div>
   );
