@@ -152,7 +152,7 @@ const Skeleton = ({ isBoring, setBoring }) => {
               <p>
                 In my last job, I was responsible for dispatching wholesale orders, which included
                 communication with carriers, superiors and colleagues from business department,
-                dividing and organizing the work
+                dividing and organizing the work and working with PC when dividing the orders.
               </p>
             )}
           </div>
