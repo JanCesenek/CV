@@ -23,8 +23,8 @@ const Skeleton = ({ isBoring, setBoring }) => {
   return (
     <div
       className={`border relative border-black rounded-lg w-[55rem] m-5 grid grid-cols-[7fr,3fr] [&>*]:p-5 ${
-        !isBoring && "text-yellow-400 border-yellow-400 shadow-lg shadow-yellow-400 bg-black"
-      }`}>
+        isBoring && "shadow-lg shadow-black"
+      } ${!isBoring && "text-yellow-400 border-yellow-400 shadow-lg shadow-yellow-400 bg-black"}`}>
       {isBoring ? (
         <div className="text-black">
           <FaMoon
@@ -96,18 +96,6 @@ const Skeleton = ({ isBoring, setBoring }) => {
               tasks for myself, be creative (come up with ideas for new apps), solve any
               problems/errors/bugs without the support of academic environment and successfully
               create my own study plan.
-            </p>
-          )}
-          {isCzech ? (
-            <p>
-              Akademické vzdělání v oboru si přesto hodlám doplnit, od září 2023 dálkově studuji
-              obor
-              <b> Aplikovaná informatika - Softwarové inženýrství na Univerzitě Hradec Králové.</b>
-            </p>
-          ) : (
-            <p>
-              Regardless of not having a degree yet, I still plan to get one. I've been studying
-              <b> Computer Science at University of Hradec Králové</b> since September 2023.
             </p>
           )}
           {isCzech ? (
@@ -230,18 +218,6 @@ const Skeleton = ({ isBoring, setBoring }) => {
         <div className="flex flex-col">
           <h3 className="text-[1.1rem] font-bold">Modern Languages, University of Essex</h3>
           <p className="text-[0.8rem]">10/2018 - 5/2020</p>
-        </div>
-        <div className="flex flex-col">
-          {isCzech ? (
-            <h3 className="text-[1.1rem] font-bold">
-              Aplikovaná informatika, Univerzita Hradec Králové
-            </h3>
-          ) : (
-            <h3 className="text-[1.1rem] font-bold">
-              Computer Science, University of Hradec Králové
-            </h3>
-          )}
-          <p className="text-[0.8rem]">{`9/2023 - ${isCzech ? "současnost" : "present"}`}</p>
         </div>
       </div>
       <div
